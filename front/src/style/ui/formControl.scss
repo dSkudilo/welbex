@@ -1,0 +1,35 @@
+.form-control {
+    position: relative;
+    padding: 0;
+    border: none;
+    margin: $formMarginTop 0;
+    & input{
+        position: relative;
+        background: #ffffff;
+        border: $border;
+        border-radius:$formRadius;
+        width:100% ;
+        height: 46px;
+        padding:$formPadding;
+        text-align: left;
+        font-size: 16px;
+        line-height: 20px;
+        cursor: pointer;
+        &:active, &:focus{
+            outline: none;
+	        box-shadow: $boxShadow;
+        }
+    }
+    & label {
+        display: block;
+        margin: 0 0 0.3rem 0.3rem;
+        font-weight: 500;
+    }
+    & small {
+        color: $red;
+    }
+}
+.form-control_error{
+    border-color: $red !important;
+    color: $red;
+}
